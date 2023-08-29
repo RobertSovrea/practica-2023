@@ -1,0 +1,373 @@
+/* Stilurile pentru formularul de scenariu */
+.scenario-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.scenario-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.scenario-form button {
+  background-color: #cc00ff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scenario-form button:hover {
+  background-color: #0050CC;
+}
+
+/* Stilurile pentru afișarea textului generat */
+.generated-text {
+  display: inline-block;
+  padding: 20px;
+  background-color: #F5F7FA;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow: auto;
+}
+
+/* Stilurile pentru antetul aplicației */
+.app-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.app-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Stilurile pentru butonul de citire */
+.read-button {
+  background-color: #dad60e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.read-button:hover {
+  background-color: #4e5f6a;
+}
+
+.download-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
+
+/* Stilurile pentru ecranul de încărcare */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loading-text {
+  color: white;
+  font-size: 24px;
+}
+
+/* ... stilurile existente ... */
+
+/* Stiluri pentru ecranul de încărcare */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ... restul stilurilor ... */
+
+/* Stilurile pentru containerul principal */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Culoarea de fundal */
+}
+
+/* Stilurile pentru cardul aplicației */
+.app-card {
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilurile pentru antetul aplicației */
+.app-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Stilurile pentru formularul de scenariu */
+.scenario-form {
+  margin-bottom: 20px;
+}
+
+.scenario-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Stilurile pentru butoane */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.action-buttons button.read-button {
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.action-buttons button.read-button:hover {
+  background-color: #0056b3;
+}
+
+.action-buttons button.download-button {
+  background-color: #28a745;
+  transition: background-color 0.3s ease;
+}
+
+.action-buttons button.download-button:hover {
+  background-color: #218838;
+}
+
+/* Stilurile pentru ecranul de încărcare */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ... restul stilurilor ... */
+
+/* Stilurile pentru textul "APLICAȚIE EXPERIMENT" din partea stângă */
+.experiment-label-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  padding: 10px;
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilurile pentru textul "APLICAȚIE EXPERIMENT" din partea dreaptă */
+.experiment-label-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  padding: 10px;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ... restul stilurilor ... */
+
+/* ... stilurile existente ... */
+
+/* Stilurile pentru butonul secret */
+.secret-button {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.secret-button:hover {
+  background-color: #ff9800;
+}
+
+/* ... restul stilurilor ... */
+
+/* ... alte stiluri ... */
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.color-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.color-button.read-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.color-button.download-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.color-button.secret-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+.color-button:hover {
+  opacity: 0.9;
+}
+
+/* ... alte stiluri ... */
+
+/* styles.css */
+
+/* ... restul stilurilor */
+
+.generated-scenarios {
+  margin-top: 20px;
+}
+
+.generated-scenarios h2 {
+  margin-bottom: 10px;
+}
+
+.generated-scenarios ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.generated-scenarios li {
+  margin-bottom: 5px;
+}
+
